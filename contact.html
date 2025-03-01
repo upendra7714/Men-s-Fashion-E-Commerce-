@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Male Fashion.</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="navbar-container">
+            <input type="checkbox" name="" id="checkbox">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html">Login</a></li>
+            </ul>
+            <div class="logo">
+                <img src="https://i.postimg.cc/TP6JjSTt/logo.webp" alt="">
+            </div>
+        </div>
+    </nav>
+    <section id="contact">
+        <div class="contact container">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3815.455778446458!2d81.78683022492548!3d17.0012994338215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37a38e007949a1%3A0xd8ccedb9cbff4073!2sRajahmundry%20Rtc%20Bus%20Stand!5e0!3m2!1sen!2sin!4v1739030567341!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form >
+                <div class="form">
+                    <div class="form-txt">
+                        <h4>INFORMATION</h4>
+                        <h1>Contact Us</h1>
+                        <span>As you might expect of a company that began as a high-end interiors contractor, we pay
+                            strict
+                            attention.</span>
+                        <h3>INDIA</h3>
+                        <p>195 E Parker Square Dr, Parker, CO 801<br>+91 982-314-0958</p>
+                        <h3>India</h3>
+                        <p>HW95+C9C, Lorem ipsum dolor sit.<br>411014</p>
+                    </div>
+                    <div class="form-details">
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <textarea name="message" id="message" cols="52" rows="7" placeholder="Message"
+                            required></textarea>
+                            <button onclick="showPopup(event)">SEND MESSAGE</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Popup Message -->
+<div class="popup-overlay" id="popup-overlay"></div>
+<div class="popup" id="popup">
+    <h3>Message Sent!</h3>
+    <p>We will get back to you soon.</p>
+    <button onclick="closePopup()">OK</button>
+</div>
+
+    </section>
+    <script>
+        function showPopup(event) {
+            event.preventDefault(); // Prevents form from reloading page
+            document.getElementById("popup-overlay").style.display = "block";
+            document.getElementById("popup").style.display = "block";
+        }
+    
+        function closePopup() {
+            document.getElementById("popup-overlay").style.display = "none";
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+    
+</body>
+</html>
